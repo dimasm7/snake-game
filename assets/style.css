@@ -1,0 +1,116 @@
+ body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: black;
+ }
+ #papan-game{
+    /* margin-top: -10vmin; */
+    /* background-color: #ccc; */
+    width: 80vmin;
+    height: 80vmin;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+ }
+ .ular{
+    /* background-color: hsl(200, 100%, 50%); */
+    border: .25vmin solid black;
+ }
+ .cemilan{
+    background-color: hsl(50, 100%, 50%);
+    border: .25vmin solid black;
+ }
+
+ #pilihColor{
+    border: none;
+    height: 5vmin;
+    cursor: pointer;
+    margin-top: 90vmin;
+    position: absolute;
+    border-radius: 5px;
+    /* margin-left: -50vmin; */
+ }
+
+ .btn-info{
+    background-color: hsl(191, 100%, 59%);
+ }
+ .btn-info:hover{
+    background-color: hsl(191, 100%, 50%);
+ }
+
+ h1{
+     color: #ccc;
+ }
+
+ #brand{
+    position: absolute;
+    margin-top: -90vmin;
+ }
+
+ #modal{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 90vmin;
+    height: 90vmin;
+    background-color: #FFF;
+    margin-top: -10vmin;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+ }
+
+ .color{
+    margin-top: 5px;
+    display: inline-block;
+    height: 5vmin;
+    width: 5vmin;
+ }
+ .color:hover{
+    border: solid gray 1px;
+ }
+ .merah, .u-merah, .p-merah, .m-merah{
+    background-color: rgb(237, 41, 41);;
+ }
+ .kuning, .u-kuning, .p-kuning, .m-kuning{
+    background-color:hsl(50, 100%, 50%);
+ }
+ .hijau, .u-hijau, .p-hijau, .m-hijau{
+    background-color: rgb(75, 237, 75);
+ }
+ .biru, .u-biru, .p-biru, .m-biru{
+    background-color: hsl(200, 100%, 50%);
+ }
+ .abu-abu, .u-abu-abu, .p-abu-abu, .m-abu-abu{
+    background-color: #ccc;
+ }
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close But ton */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+

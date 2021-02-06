@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ular Kotak</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script/game.js" defer type="module"></script>
+    <script src="assets/script/sweetalert.min.js"></script>
+</head>
+<body>
+  <div id="modal">
+    <div>
+      <div id="pilih" class="modal-content">
+        <section id="select-color-ular">
+          <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+          <span style="display: block;"> Pilih Warna Ular</span>
+          <div id="u-merah" class="color merah"></div>
+          <div id="u-kuning" class="color kuning"></div>
+          <div id="u-hijau" class="color hijau"></div>
+          <div id="u-biru" class="color biru"></div>
+          <div id="u-abu-abu" class="color abu-abu"></div>
+        </section>
+        <hr/>
+        <section id="select-color-food">
+          <span style="display: block;">Pilih Warna Makanan</span>
+          <div id="m-merah" class="color merah"></div>
+          <div id="m-kuning" class="color kuning"></div>
+          <div id="m-hijau" class="color hijau"></div>
+          <div id="m-biru" class="color biru"></div>
+          <div id="m-abu-abu" class="color abu-abu"></div>
+        </section>
+        </section>
+        <hr/>
+        <section id="select-color-board">
+          <span style="display: block;">Pilih Warna Lapangan</span>
+          <div id="p-merah" class="color merah"></div>
+          <div id="p-kuning" class="color kuning"></div>
+          <div id="p-hijau" class="color hijau"></div>
+          <div id="p-biru" class="color biru"></div>
+          <div id="p-abu-abu" class="color abu-abu"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <div id="brand">
+    <h1>Snake [ ]</h1>
+  </div>
+  <div id="papan-game">
+    
+  </div>
+    <button id="pilihColor" class="btn-info" onclick="document.getElementById('modal').style.display='block'">Ubah Warna</button>
+    <!-- <canvas></canvas> -->
+</body>
+</html>
